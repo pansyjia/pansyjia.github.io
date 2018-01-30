@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+}
+
+body {
+  background: #999999;
+  background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	position: absolute;
+	right: 10px;
+}
+
+# wrap{
+  background-color: #545649;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1{
+	background-color: yellow;
+	text-align: right;
+}
+
+nav{
+	background-color: green;
+}
+
+#content ol, nav ul{
+	list-style-type: none;
+	color: black;
+}
+
+nav a{
+	color: white;
+	display: inline-block;
+	margin-left: 20px;
+	text-decoration: : none;
+	position: relative;
+}
+
+aside {
+	color: red;
+	position: absolute;
+	right: 10px;
+}
