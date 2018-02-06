@@ -1,48 +1,78 @@
 *{
   margin: 0;
+  padding: 0; /* feb05*/
 }
 
 body {
   background: #999999;
-  background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
-	background-repeat:no-repeat;
-	background-position: center;
 	position: absolute;
-	right: 10px;
+
 }
 
-# wrap{
+#wrap{
   background-color: #545649;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+  height: 470px; /* feb05*/
+  width: 725px; /* feb05*/
+  margin: auto; /* feb05*/
+  position: relative; /* feb05*/
+  overflow: hidden; /* feb05*/
 }
+
 
 header h1{
 	background-color: yellow;
-	text-align: right;
+	text-align: right; /* feb05*/
+  padding-top: 5px; /* feb05*/
+  height: 40px; /* feb05*/
+  font-weight: bold; /* feb05*/
 }
 
 nav{
 	background-color: green;
+  height: 35px; /* feb05*/
+}
+
+#content {
+  background-color: rgb(84, 85, 74);
+  padding:inherit;
+}
+
+#content ul {
+  text-align: center;
+  list-style: none;
 }
 
 #content ol, nav ul{
-	list-style-type: none;
-	color: black;
+  display: block;
+  height: 35px; /* feb05*/
+  padding-left: 40px; /* feb05*/
+}
+
+nav ul li {
+  background-color: black;
+  display: inline-block;
+  height: inherit;
 }
 
 nav a{
-	color: white;
+  padding: 8px 20px 8px 35px;
+  vertical-align: middle;
+  color: white;
 	display: inline-block;
-	margin-left: 20px;
-	text-decoration: : none;
-	position: relative;
+  height: inherit;
+	position: relative; /* own */
 }
 
 aside {
-	color: red;
-	position: absolute;
-	right: 10px;
+	height: 395px;
+  width: 150px;
+	float:right;
+  background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
+  background-repeat:no-repeat;
+  background-position: center 150px;
+  background-size: 150px;
+}
+
+aside ul {
+  margin-left: 40px;
 }
