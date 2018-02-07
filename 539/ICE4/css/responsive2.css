@@ -1,0 +1,5 @@
+@media only screen and (min-width: 750px){
+	.top-nav ul li{
+		display: inline-block;
+	}
+}
