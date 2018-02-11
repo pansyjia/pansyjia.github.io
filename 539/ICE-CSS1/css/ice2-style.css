@@ -59,15 +59,15 @@ nav ul li a{
 }
 
 aside {
-	height: 395px;
 	width: 20%;
 	background-color: white;
 	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
 	background-repeat:no-repeat;
 	background-position: center;
 	background-size: contain;
-  position: absolute;
-  right: 0;
+	position: absolute;
+	right: 0;
+	height: 100%;
 }
 
 aside ul {
