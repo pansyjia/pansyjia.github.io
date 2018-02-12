@@ -1,5 +1,45 @@
-@media only screen and (min-width: 750px){
-	.top-nav ul li{
-		display: inline-block;
-	}
+@media only screen and (min-width: 650px) {
+  .top-nav ul li {
+    display: inline-block;
+  }
+
+  /* .top-nav ul{
+  	background-color: ???;
+  } */
+
+  .top-nav ul li, .menu-icon{
+    border-top: 1px solid red;
+  }
+
+  /* .top-nav ul li a{
+  	color: red;
+  } */
+
+  /* .menu-icon a{
+  	color: #DDDDDA;
+  }*/
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .top-nav ul li {
+    display: inline-block;
+    float: right;
+  }
+
+  .top-nav ul li, .menu-icon{
+    border-top: 0px;
+  }
+
+  .top-nav ul li a {
+  
+  }
+
+  .logo{
+  	margin: 0;
+    padding: auto;
+    text-align: left;
+  }
+}
+
 }
