@@ -51,9 +51,9 @@
 
 @media only screen and (min-width: 1000px) {
 
-.top-nav {
+  .top-nav {
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-between;
     align-items:center;
   }
 
@@ -76,6 +76,7 @@
     display: flex;
     justify-content:flex-start;
   }
+
 
   .logo img{
     display: inline-block;
