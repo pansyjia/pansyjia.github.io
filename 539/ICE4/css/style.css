@@ -134,12 +134,12 @@ header{
 }
 
 
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
   .top-nav ul {
     display: inline-block;
 		width: 300px;
   }
-}
+} */
 
 /*implement menu toogle*/
 .top-nav.toggle-open ul{
