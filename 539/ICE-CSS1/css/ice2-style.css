@@ -24,7 +24,6 @@ header h1{
 
 nav{
 	background-color: green;
-  height: 35px;
 }
 
 #content {
@@ -38,9 +37,6 @@ nav{
 }
 
 nav ul{
-  display: block;
-  height: 35px;
-  padding-left: 40px;
   text-align: center;
 }
 
