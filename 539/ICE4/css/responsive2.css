@@ -17,31 +17,23 @@
   }
 
   /* image adjustment*/
-  .photo-grid div {
+  .photo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .resp-img1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  .resp-img2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .photo-cell {
+    grid-column: 1 / span 2;
+    padding: 0px;
   }
 
   .resp-img3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1 / 2;
   }
 
-  .resp-img4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+   .resp-img4 {
+     grid-column: 2 / 2;
   }
-
 
 }
 
@@ -51,92 +43,50 @@
 
 @media only screen and (min-width: 1000px) {
 
+/* navigation adjustment*/
+
   .top-nav {
     display: flex;
-    justify-content:space-between;
+    justify-content:space-between; /* changed */
     align-items:center;
-  }
-
-  .top-nav ul {
-    flex-wrap: wrap;
-    float: right;
   }
 
   .top-nav ul li {
     display: inline-block;
-    /* vertical-align: middle; */
+    border-top: none;
   }
 
   .top-nav ul li, .menu-icon{
     border-top: 0px;
   }
 
-
   .logo {
     display: flex;
     justify-content:flex-start;
   }
-
 
   .logo img{
     display: inline-block;
   }
 
 
-
-  .photo-grid div {
+/* image adjustment*/
+  .photo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1 1 1 1;
   }
 
-  .resp-img1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .resp-img2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  .photo-cell {
+    grid-column: span 2;
+    padding: 0px;
   }
 
   .resp-img3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 1 / 2;
   }
 
   .resp-img4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 2 / 2;
   }
-
-  .resp-img5 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .resp-img6 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .resp-img7 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
 
 }
