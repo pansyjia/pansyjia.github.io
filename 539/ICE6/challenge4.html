@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<meta charset="UTF-8">
 	<title>Challenge 4</title>
     <style>
-
-    .errormsg {
+    .errormsg{
         /*font: Use a cool Google font*/
-    	color:red;
-    	display:none; }
+        font-family: 'Montserrat', sans-serif;
+        color:red;
+        display:none; }
     </style>
 
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+			// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
 			//alert('false');
             var fullname = document.getElementById('fullname');
             var nameError = document.getElementById('nameerrormsg');
             var fullnameValue = fullname.value;
-            if (!fullname.value){
+            if (!fullnameValue){
                 nameError.style.display = 'block';
             }else{
                 nameError.style.display = 'none';
             }
 
             var streetaddr = document.getElementById('streetaddr');
-            var addressError = document.getElementById('streetaddrmsg');
+            var addrError = document.getElementById('addrerrormsg');
             var streetaddrValue = streetaddr.value;
-            if (!streetaddr.value){
-                addressError.style.display = 'block';
+            if (!streetaddrValue){
+                addrError.style.display = 'block';
             }else{
-                addressError.style.display = 'none';
+                addrError.style.display = 'none';
             }
 
             if (!fullnameValue || !streetaddrValue){
                 return false;
             }
-
-
     }
+
     </script>
 </head>
 <body>
