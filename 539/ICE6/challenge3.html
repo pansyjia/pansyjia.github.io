@@ -5,20 +5,21 @@
 	<title>Challenge 3</title>
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
-      var s = document.getElementById('opt-straw').checked;
+			// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
+			var s = document.getElementById('opt-straw').checked;
       var b = document.getElementById('opt-blue').checked;
       // alert('s');
       // alert('b');
 			if (s||b) {
 				return true;
 			}// or (s==true || b==true)
-	    else{
-        return false;  
-      }
-
+			else{
+        alert("Please select your favorite berry!");
+				return false;
+			}
 		}
-    </script>
+
+		</script>
 </head>
 <body>
   <h1> Challenge 3</h1>
