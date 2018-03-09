@@ -24,25 +24,25 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
 	<title>Challenge Two</title>
 
     <script type="text/javascript">
-	   function setHomeAddress(){
+    function setHomeAddress(){
       // YOUR CODE HERE
       //alert('hi')
       var x = document.getElementById("billing").value;
-      //aler(x)
       var y = document.getElementById("home");
-			if (document.getElementById('useBilling').checked == true){
-				y.value = x;
-	      y.disabled = true;
-			}else{
-				y.value = "";
-	      y.disabled = false;
-			}
-       // can't type, can't click
-
+      var z = document.getElementById("useBilling").checked;
+      if (z == true){
+          y.value = x;
+          y.disabled = true;
+      }else{
+          y.value = "";
+          y.disabled = false;
       }
+       // disabled means can't type, can't click
      }
+
     </script>
 </head>
+
 <body>
     <h1>Challenge Two</h1>
     <form action="challenge3.html">
