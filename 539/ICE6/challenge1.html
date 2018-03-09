@@ -20,24 +20,22 @@ When you test your form at the moment, you'll notice that you can click on the c
     #emailfield {
       display:none;
     }
-</style>
     </style>
 
     <script type="text/javascript">
     function toggleEmail(){
 		/*    YOUR CODE HERE - check Step 1*/
       var y=document.getElementById('subscribe').checked;
-      if (y==true){
-        var x = document.getElementById('emailfield')
+      var x = document.getElementById('emailfield');
+      if (y == true){
         x.style.display = 'block';
       }
       else{
-        var x = document.getElementById(('emailfield'))
         x.style.display = 'none';
       }
-
-	}
+    }
     </script>
+    
   </head>
   <body>
     <h1>Challenge One</h1>
