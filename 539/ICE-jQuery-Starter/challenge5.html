@@ -35,10 +35,39 @@
 		text-align: center;
 	}
 	</style>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
+	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	$(document).ready(function){ //pass function as an argument or function.onReady()
+		$('.preview').on('mouseoover focus',showImage); //multiple events space as common
+		// $('.preview').on('focue'), showImage);
+		$('.preview').on('mouseout blur',hideImage);
+
+	});
+
+// functions
+	function showImage(){
+
+		var src = this.src
+		var alt = this.alt
+
+		$("#image")
+	     .css("backgroung-image", "url('+ src +')" ) //"url('+ this.src +')"
+			 // .text(this.alt)
+			 $('image').text（alt) //text(attr.alt)
+	};
+
+
+	function hideImage(){
+      $("#image").css("background-image", "");
+      $("#image").text("Hover over an image below.");
+  };
+
+
+
 	</script>
 </head>
 
@@ -49,21 +78,22 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
-			alt = "Styling with a Bandana" 
+		<img class = "preview"
+			alt = "Styling with a Bandana"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			tabindex='1'>
 
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
-			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
-	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+		<img class = "preview"
+			alt = "With My Boy"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
+			tabindex ='2'>
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "1"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+			alt = "Young Puppy";
+			tabindex = '3'>
 </body>
 </html>
-	
