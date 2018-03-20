@@ -27,7 +27,9 @@ legend {
 	margin-top: 2%;
 	margin-bottom: 1%;
 	margin-left: 5px;
-	font-weight: bold;
+  font-weight: bold;
+	width: 98%;
+
 }
 
 fieldset {
@@ -47,7 +49,7 @@ form {
 	padding:5px;
 }
 
-.form-area {
+.frame-area {
 	margin: 10px;
 	border: 1px solid #d9d7d7;
 }
@@ -59,19 +61,20 @@ label {
 }
 
 input {
-	display: inline-block;
+	/* display: inline-block; */
 	padding: .5%;
 	height: 26px;
 }
 
 button {
 	display: block;
-	margin-left: 5px;
 	padding: 1% 3%;
 	margin-top: 12px;
 	text-align: center;
 	color: #091343;
 	background: #d9d7d7;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
