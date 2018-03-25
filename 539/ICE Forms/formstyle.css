@@ -22,6 +22,12 @@ h4 {
 	margin: 10px;
 }
 
+
+h5 {
+	text-align: center;
+}
+
+
 legend {
 	font-size: 16px;
 	margin-top: 2%;
@@ -38,6 +44,13 @@ fieldset {
 	margin: 1%;
 
 }
+
+.required::after {
+	content: "*";
+    padding-left: 10px;
+    color: red;
+}
+
 
 form {
 	background: #ffffff;
@@ -91,14 +104,10 @@ input[type=submit] {
 	border-radius: 5%;
 }
 
-/* form{
-	counter-reset: fieldsets;
+.education, .work {
+	 margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
-
-form > fieldset > legend:before {
-	content: "Step " counter(fieldsets) ": ";
-	counter-increment: fieldsets;
-} */
 
 
 /* responsive */
