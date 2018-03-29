@@ -1,0 +1,38 @@
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+
+  /* navigation adjustment*/
+  .top-nav ul li {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .top-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-nav ul li, .menu-icon{
+    border-top: 1px solid red;
+  }
+
+  /* image adjustment*/
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-cell {
+    grid-column: 1 / span 2;
+    padding: 0px;
+  }
+
+  .resp-img3 {
+    grid-column: 1 / 2;
+  }
+
+   .resp-img4 {
+     grid-column: 2 / 2;
+  }
+
+}
