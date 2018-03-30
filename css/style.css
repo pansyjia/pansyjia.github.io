@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Hind:300,400,700);
 
+* {
+	margin:1px;
+	padding:1px;
+	background-color: #ffffff;
+}
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body {
