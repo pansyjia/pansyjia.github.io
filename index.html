@@ -4,62 +4,108 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Siyu Jia</title>
+    <!-- link style sheets -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   	<link rel="stylesheet" type="text/css" href="css/style.css" />
-  	<link rel="stylesheet" type="text/css" href="css/component.css" />
-  	<script src="js/snap.svg-min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  	<!-- <script src="js/snap.svg-min.js"></script> -->
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
 
+    <script>
+    $(document).ready(function(){
+      $(".logo-text-container").hover(
+        function()
+        {
+      $("#logo-text").animate({opacity:1}, 350);
+        },
+        function()
+        {
+      $("#logo-text").animate({opacity:0}, 500);
+        }
+      );
+    });
+    </script>
 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Style-->
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
   </head>
 
 
-
-
-  <body>
+  <body class="body body-home">
 
     <header>
-      <h1>
-        <a href="index.html"><img src="img/logo.png" width="5%"></a>
-    	  <h1>Siyu Jia</h1>
-      </h1>
 
-      <nav class="nav primary-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://pansyjia.github.io/project.html">Project</a></li>
-        <li><a href="https://pansyjia.github.io/visual.html">Visual</a></li>
-        <li><a href="https://pansyjia.github.io/about.html">About</a></li>
-        <li><a href="https://pansyjia.github.io/contact.html">Contact</a></li>
+      <nav id="top-nav" class="top-nav">
+
+      <div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+      
+      <a href="index.html">
+        <div class = "logo"><img id="logo-img" src="img/logo.png" alt="logo-icon"></div>
+      </a>
+        <div id="logo-text">Porfolio</div>
+      </div>
+    	  
+      <ul class="top-nav-item">
+        <li><a class="current-page" href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="visual.html">Visual</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      </nav>
+    </nav>
 
     </header>
 
 
-    <div>
+    <div id="main-content" class="main-content main-content-home">
       <h2>Hi, I'm Siyu</h2>
-      <p>a master student at the University of Michigan's School of Information, specializing in Human-computer Interaction. </p>
+      <p>a master's student at the University of Michigan's School of Information, specializing in Human-computer Interaction. HCI is a fusion of my intellectual interests: technology, design, and people.</p>
+      <br>
+      <br>
     </div>
 
-      <img src="img/home1.png" alt="Home One" width="30%">
-      <img src="img/home2.png" alt="Home Two" width="30%">
-      <img src="img/home3.png" alt="Home Three" width="30%">
-      <img src="img/home4.png" alt="Home Four" width="30%">
-      <img src="img/home5.png" alt="Home Five" width="30%">
+    <div id="home-gallery" class="container">
+      <div class="row">
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home1.png" alt="Home Image One" width="100%">
+      </div>
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home2.png" alt="Home Image Two" width="100%">
+      </div>
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home3.png" alt="Home Image Three" width="100%">
+      </div>
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home4.png" alt="Home Image Four" width="100%">
+      </div>
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home5.png" alt="Home Image Five" width="100%">
+      </div>
+      <div class="col-sm-4" id="image-cell">
+        <img src="img/home6.png" alt="Home Image Five" width="100%">
+      </div>
+      </div>
+    </div>
 
     <br>
     <br>
-    <br>
+
     <footer>
-      <span>&copy Siyu Jia 2018</span>
+      <div class="socialmedia">
+        <ul>
+          <li><a href="mailto:siyujia@umich.edu"><img class="socail-media-icon" src="img/social/email.png" alt="email-icon" ></a></li>
+          <li><a href="https://www.linkedin.com/in/siyujia/" target="_blank"><img class="socail-media-icon" src="img/social/linkedin.png" alt="Linkedin-icon"></a></li>
+          <li><a href="https://www.instagram.com/pansy3717/" target="_blank"><img class="socail-media-icon" src="img/social/instagram.png" alt="Instagram-icon"></a></li>
+          <li><a href=" https://www.facebook.com/siyu.jia" target="_blank"><img class="socail-media-icon" src="img/social/facebook.png" alt="Facebook-icon"></a></li>
+          <li><a href="https://github.com/pansyjia" target="_blank"><img class="socail-media-icon" src="img/social/github.png" alt="Instagram-icon"></a></li>
+
+        </ul>
+      </div>
+      
+      <div class="copyright">&copy Siyu Jia 2018</div>
+
 
 	  </footer>
 

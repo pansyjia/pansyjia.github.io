@@ -1,0 +1,18 @@
+/* Common style */
+.grid {
+	margin: 10px auto 10px;
+	max-width: 1000px;
+	width: 70%;
+}
+
+.grid a {
+	float: left;
+	max-width: 250px;
+	width: 25%;
+}
+
+
+
+
+/* Media Queries */
+

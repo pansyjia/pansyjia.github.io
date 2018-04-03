@@ -3,19 +3,48 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<title>Siyu Jia</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/about.css" />
-		<script src="js/snap.svg-min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+		<!-- <script src="js/snap.svg-min.js"></script> -->
 	</head>
 
-	<body>
-		<a href="index.html"><img src="img/logo.png" width="5%"></a>
-		<h1 id="title"> Get in Touch! </h1>
-		<form name="application" action="" method="post">
+	<body class="body body-home">
 
-   <div>
+	<header>
+
+      <nav id="top-nav" class="top-nav">
+
+      <div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+      
+      <a href="index.html">
+        <div class = "logo"><img id="logo-img" src="img/logo.png" alt="logo-icon"></div>
+      </a>
+        <div id="logo-text">Porfolio</div>
+      </div>
+    	  
+      <ul class="top-nav-item">
+        <li><a class="current-page" href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="visual.html">Visual</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    </header>
+
+		<h1 id="title"> Get in Touch! </h1>
+
+		<!-- <form name="application" action="" method="post"> -->
+
+   <div class="container">
+   		<div class="row">
+   		<div class="col-sm-5">
 		 <h2> Contact Me </h2>
 		 <h3> EMAIL</h3>
 		 <img src="img/mail.png" width="2%">
@@ -29,22 +58,24 @@
 		 <h3> PHONE</h3>
 		 <img src="img/phone.png" width="1.5%">
 		 <p>+1 (734)730-9885</p>
+		 </div>
+		</div>
 
 
       	<!-- form -->
-    <fieldset>
-			<h2> Leave a Message </h2>
+    	<div class="col-sm-7">
+    		<h2> Leave a Message </h2>
 			<label> Name:<input type="text" name="fname"   autofocus></label><br>
 			<label> Subject:</label><br>
 			<label> Email Address: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
 			<label> Message: <input type="text"></label><br><br>
-		</fieldset><br>
+			<input type="submit" value = "Submit">
+		</div>
+		</div>
+	</div>
 
 
-
-	<input type="submit" value = "Submit">
-
-	</form>
+<!-- 	</form> -->
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
@@ -52,6 +83,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
+
+		<footer>
+      <div class="socialmedia">
+        <ul>
+          <li><a href="mailto:siyujia@umich.edu"><img class="socail-media-icon" src="img/social/email.png" alt="email-icon" ></a></li>
+          <li><a href="https://www.linkedin.com/in/siyujia/" target="_blank"><img class="socail-media-icon" src="img/social/linkedin.png" alt="Linkedin-icon"></a></li>
+          <li><a href="https://www.instagram.com/pansy3717/" target="_blank"><img class="socail-media-icon" src="img/social/instagram.png" alt="Instagram-icon"></a></li>
+          <li><a href=" https://www.facebook.com/siyu.jia" target="_blank"><img class="socail-media-icon" src="img/social/facebook.png" alt="Facebook-icon"></a></li>
+          <li><a href="https://github.com/pansyjia" target="_blank"><img class="socail-media-icon" src="img/social/github.png" alt="Instagram-icon"></a></li>
+
+        </ul>
+      </div>
+
+      <div class="copyright">&copy Siyu Jia 2018</div>
+
+
+	  </footer>
 
 	</body>
 </html>
