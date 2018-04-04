@@ -70,42 +70,61 @@
 
    <div class="container" id="contact_container">
    	<div class="row">
-    <div id="contacts" class="col-sm-1" order-1>
+    <div id="contacts" class="col-sm-2" order-1>
     </div>
-   	<div id="contacts" class="col-sm-5" rder-2>
-		 <h4> Contact Me </h4>
-		 <h5> EMAIL</h5>
-		 <a href="mailto:siyujia@umich.edu">siyujia@umich.edu</a>
-		 <h5> WEBSITE</h5>
-		 <a href="https://siyujia.me">https://siyujia.me</a>
-		 <h5> LINKEDIN</h5>
-		 <a href="https://www.linkedin.com/in/siyujia/">Siyu Jia</a>
-		 <h5> PHONE</h5>
-		 <a>+1 (734)730-9885</a>
+   	<div id="contacts" class="col-sm-4" rder-2>
+		<h4> Contact Me </h4>
+		<h5> EMAIL</h5>
+		<a href="mailto:siyujia@umich.edu">siyujia@umich.edu</a>
+		<h5> WEBSITE</h5>
+		<a href="https://siyujia.me">https://siyujia.me</a>
+		<h5> LINKEDIN</h5>
+		<a href="https://www.linkedin.com/in/siyujia/">Siyu Jia</a>
+		<h5> PHONE</h5>
+		<a>+1 (734)730-9885</a>
      <br>
      <br>
      <br>
 		</div>
 
-      <!-- form -->
-    	<div id= "form" class="col-sm-5" order-3>
-    	<h4> Leave a Message </h4>
-      <legend>NAME:</legend>
-			<label> <input type="text" name="fname"   autofocus required></label><br>
-      <legend>SUBJECT:</legend>
-			<label> <input type="text" name="subject" required></label><br>
-      <legend>EMAIL ADDRESS:</legend>
-			<label><input type="email" name="email"   placeholder = "xxx@umich.edu" required></label><br>
-      <legend>MESSAGE:</legend>
-			<label><input type="text" name="message"></label><br><br>
-			<input id="button" type="submit" value = "SUBMIT">
-		  </div>
-      <div id="contacts" class="col-sm-1" order-4>
-      </div>
+    <!-- form -->
+    <div id= "form" class="col-sm-4" order-3>
+    <h4> Leave a Message </h4>
+    <legend>NAME:</legend>
+		<label> <input type="text" name="fname"   autofocus required></label><br>
+    <legend>SUBJECT:</legend>
+		<label> <input type="text" name="subject" required></label><br>
+    <legend>EMAIL ADDRESS:</legend>
+		<label><input type="email" name="email"   placeholder = "xxx@umich.edu" required></label><br>
+    <legend>MESSAGE:</legend>
+		<label><input type="text" name="message"></label><br><br>
+		<input id="button" type="submit" value = "SUBMIT">
+		</div>
+    <div id="contacts" class="col-sm-2" order-4>
+    </div>
 		</div>
     <br>
     <br>
-    <br>   
+    <br> 
+
+    <div id="googleMap" style="width:80%;height:400px;"></div>
+    <script>
+      function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(42.279594,-83.732124),
+        zoom:5,
+        };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlFtVm7e8wEDywm7o77clO-S8-KBFWg2Y&callback=myMap"></script>
+
+    <br>
+    <br>
+    <br> 
+
+
 	</div>
 
 
