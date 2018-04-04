@@ -188,13 +188,14 @@ a {
 
 .body-project h4 {
 	margin-top: 1em; 
-	color:#3a2770;
+	color:#350f93;
 }
 
 .main-content-proj {
 	margin: 1em 3em;
 	padding: 0.2em 3em;
 }
+
 
 p{
 	padding: 0.5em 0.2em;
@@ -241,10 +242,49 @@ figure {
 .resume a{
 	font-size: 90%;
 	padding: 1em; 
-	border: 1px solid black;
-	border-radius:5px;
+	border: 2px solid black;
+	border-radius:3px;
 }
 
 #self_intro {
 	text-align: left;
+}
+
+
+/*contact page*/
+#contacts h4{
+	padding-bottom: 0.5em;
+}
+
+#form h4{
+	padding-bottom: 1em;
+}
+
+#contacts h5{
+	color:#350f93;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-top: 2em;
+}
+
+
+#form legend{
+	color:#350f93;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+
+
+#form label{
+	padding-top: 0em;
+}
+
+
+#button{
+	background-color: grey;
+	color: #ffffff;
+	font-size: 0.8em;
+	border:1px solid grey;
+	padding:0.4em 0.6em;
 }

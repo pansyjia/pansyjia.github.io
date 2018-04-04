@@ -12,9 +12,8 @@
   	<link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-    <!-- link to jquery -->
+     <!-- link to jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
     <script>
     $(document).ready(function(){
       $(".logo-text-container").hover(
@@ -33,12 +32,10 @@
  	</head>
 
 
-	<body class="body body-home">
+	<body class="body-contact">
 
     <header>
-
       <nav id="top-nav" class="top-nav">
-
       <div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
       
       <a href="index.html">
@@ -58,58 +55,66 @@
 
     </header>
 
-		<h1 id="title"> Get in Touch! </h1>
+    <div class="container intro">
+    <div class="row">
+      <div class="col-sm-7" id="proj_intro">
+        <h4>GET IN TOUCH</h4>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
 
 		<!-- <form name="application" action="" method="post"> -->
 
-   <div class="container">
-   		<div class="row">
-   		<div class="col-sm-5">
-		 <h2> Contact Me </h2>
-		 <h3> EMAIL</h3>
-		 <img src="img/mail.png" width="2%">
+   <div class="container" id="contact_container">
+   	<div class="row">
+    <div id="contacts" class="col-sm-1" order-1>
+    </div>
+   	<div id="contacts" class="col-sm-5" rder-2>
+		 <h4> Contact Me </h4>
+		 <h5> EMAIL</h5>
 		 <a href="mailto:siyujia@umich.edu">siyujia@umich.edu</a>
-		 <h3> WEBSITE</h3>
-		 <img src="img/site.png" width="1.5%">
+		 <h5> WEBSITE</h5>
 		 <a href="https://siyujia.me">https://siyujia.me</a>
-		 <h3> LinkedIn</h3>
-		 <img src="img/linkedin.png" width="1.5%">
+		 <h5> LINKEDIN</h5>
 		 <a href="https://www.linkedin.com/in/siyujia/">Siyu Jia</a>
-		 <h3> PHONE</h3>
-		 <img src="img/phone.png" width="1.5%">
-		 <p>+1 (734)730-9885</p>
-		 </div>
+		 <h5> PHONE</h5>
+		 <a>+1 (734)730-9885</a>
+     <br>
+     <br>
+     <br>
 		</div>
 
-
-      	<!-- form -->
-    	<div class="col-sm-7">
-    		<h2> Leave a Message </h2>
-			<label> Name:<input type="text" name="fname"   autofocus></label><br>
-			<label> Subject:</label><br>
-			<label> Email Address: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
-			<label> Message: <input type="text"></label><br><br>
-			<input type="submit" value = "Submit">
+      <!-- form -->
+    	<div id= "form" class="col-sm-5" order-3>
+    	<h4> Leave a Message </h4>
+      <legend>NAME:</legend>
+			<label> <input type="text" name="fname"   autofocus required></label><br>
+      <legend>SUBJECT:</legend>
+			<label> <input type="text" name="subject" required></label><br>
+      <legend>EMAIL ADDRESS:</legend>
+			<label><input type="email" name="email"   placeholder = "xxx@umich.edu" required></label><br>
+      <legend>MESSAGE:</legend>
+			<label><input type="text" name="message"></label><br><br>
+			<input id="button" type="submit" value = "SUBMIT">
+		  </div>
+      <div id="contacts" class="col-sm-1" order-4>
+      </div>
 		</div>
-		</div>
+    <br>
+    <br>
+    <br>   
 	</div>
 
-
-<!-- 	</form> -->
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-formhelpers.min.js"></script>
 
 		<footer>
       <div class="socialmedia">
         <ul>
+          <li><a href="https://www.instagram.com/pansy3717/" target="_blank"><img class="socail-media-icon" src="img/social/instagram.png" alt="Instagram-icon"></a></li>
           <li><a href="mailto:siyujia@umich.edu"><img class="socail-media-icon" src="img/social/email.png" alt="email-icon" ></a></li>
           <li><a href="https://www.linkedin.com/in/siyujia/" target="_blank"><img class="socail-media-icon" src="img/social/linkedin.png" alt="Linkedin-icon"></a></li>
-          <li><a href="https://www.instagram.com/pansy3717/" target="_blank"><img class="socail-media-icon" src="img/social/instagram.png" alt="Instagram-icon"></a></li>
           <li><a href=" https://www.facebook.com/siyu.jia" target="_blank"><img class="socail-media-icon" src="img/social/facebook.png" alt="Facebook-icon"></a></li>
           <li><a href="https://github.com/pansyjia" target="_blank"><img class="socail-media-icon" src="img/social/github.png" alt="Instagram-icon"></a></li>
 
@@ -120,6 +125,12 @@
 
 
 	  </footer>
+
+      <!-- Bootstrap core JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+   
 
 	</body>
 </html>
