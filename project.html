@@ -1,72 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<title>Siyu Jia</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-	<!-- <script src="js/snap.svg-min.js"></script> -->
+    <title>Siyu Jia</title>
+    <!-- link style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-</head>
+    <!-- link to jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-<body class="body body-home">
+    <script>
+    $(document).ready(function(){
+      $(".logo-text-container").hover(
+        function()
+        {
+      $("#logo-text").animate({opacity:1}, 350);
+        },
+        function()
+        {
+      $("#logo-text").animate({opacity:0}, 500);
+        }
+      );
+    });
+    </script>
 
-	<header>
-		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" width="5%"></a>
+  </head>
+
+	<body class="body-project">
+
+    <header>
+      <nav id="top-nav" class="top-nav">
+      <div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+      <a href="index.html"><div class = "logo"><img id="logo-img" src="img/logo.png" alt="logo-icon"></div>
+      </a>
+      <div id="logo-text">PORTFOLIO</div>
+      </div>
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current-page" href="project.html">Project</a></li>
+        <li><a href="visual.html">Visual</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </header>
+
+	<div class="container intro">
+		<div class="row">
+			<div class="col-sm-7" id="proj_intro">
+				<h4>UX Research - Yahoo Finance</h4>
+				<p>Yahoo! Finance is a financial market monitoring platform providing users with stock quotes, financial news. It also allows users to build watchlists, as well as link their portfolio to its app. As a team of four, we are evaluating the usability, usefulness, and acceptability of Yahoo! Finance mobile app. </p>
+			</div>
 		</div>
-			<h1>Siyu Jia</h1>
+	</div>
 
-	<nav id="top-nav" class="top-nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a class="current-page" href="project.html">Project</a></li>
-			<li><a href="visual.html">Visual</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	</header>
+	<div id="main-content" class="main-content-proj">
 
-	<div>
-	    <figure>
-			<img src="img/project/yf/yf1.jpg" class="">
-			</figure>
-			<figcaption>
-				Yahoo Finance
-			</figcaption>
+		<div class="container proj-intro">
+		<div class="row">
+			<div class="col-md-5" order-1>	   
+			<img src="img/project/yf/yf1.jpg" alt="project cover" width="100%">
+			</div>	
+
+			<div class="col-md-5" order-2>	   
+			<h4>Project Overview</h4>
+			 <ul>
+			 	<li>Type:  User Experience Research</li>
+			 	<li>Duration:  Winter 2018, 10 weeks</li>
+        		<li>Team:  Nalin Bhatia, Raphael Ku, Yaojia Hua, Siyu Jia</li>
+        		<li>My role:  UX Researcher, Designer</li>
+        	</ul>
+			</div>
+		</div>
+		</div>		
+
+
+
+	<div id="proj_content" class="container">
+		<br>
+		<h4>Research Goals</h4>
+		<p>Our work mainly focus on two areas of inquiry for Yahoo Finance: First-time app experiences and information seeking. The project also aims to identify the needs and usage patterns of the younger generation for their investment and financial management goals.</p>
+		<br>
+		<h4>Process</h4>
+		<p>Methods include interviews, comparative evaluation, surveys, heuristic evaluation, usability tests, interaction mapping, etc. (The project is still in progress.) </p>
+		<figure>
+		<img src="img/project/yf/yf2.png" alt="process" width="70%">
 		</figure>
-	</div>
-
+		<br>
+		<h4>Interaction Map</h4>
+		<p>The goal of creating an interaction map is to generate a static representation of Yahoo! Finance mobile app. This representation makes salient all the possible actions, and all the respective error and non-error “states” that those actions can lead to. </p>
+		<figure>
+		<img src="img/project/yf/yf3.jpg" alt="interaction map" width="80%">
+		</figure>
+		<br>
+		<h4>Interviews</h4>
+		<p>To develop a detailed understanding of the target audience of Yahoo! Finance, we conducted two stakeholder interviews and six interviews with the current or potential users of the Yahoo! Finance app. </p>
+		<figure>
+		<img src="img/project/yf/yf4.png" alt="interview process" width="70%">
+		</figure>
+		<p>After all the interviews were complete, we interpreted the interviews as a group and identified themes and patterns observed during the interview process. Following this, we constructed three different fictitious characters (personas) that represent some of the dimensions of the people we interviewed.  The personas should vary across the key behavioral and demographic variables we have identified for our target audience. </p>
+		<figure>
+		<img src="img/project/yf/yf6.png" alt="affinity wall" width="80%">
+		</figure>
+		<br>
+		<figure>
+		<img src="img/project/yf/yf5.png" alt="personas" width="80%">
+		</figure>
+		<br>
+		<h4>Comparative Analysis</h4>
+		<div class="row">
+			<div class="col-md-4" order-1>
+		<p>The goal of this comparative evaluation is to get a better sense of what features and qualities are expected among products in a similar space. We identified 12 comparative products that are a mix of finance apps, brokerage accounts, and financial forums.</p></div>
+		<div class="col-md-6" order-2>
+		<img src="img/project/yf/yf7.png" alt="comparative analysis" width="100%"></div>
+		</div>
+		<br>
+		<h4>Findings</h4>
+		<p>Hi-fi prototypes was used to conduct user tests and gather feedback about the primary functions and interface layout.</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/1rvm1RPKdcA" allowfullscreen></iframe>
 		<br>
 		<br>
-		<video controls>
-		</video>
-
-	<div>
-		<h1>Research Goals</h1>
-		<p></p>
-		<h1>Process & Methods</h1>
-		<img src="img/project/yf/yf2.png" width="60%">
-		<h1>Interaction Map</h1>
-		<p></p>
-		<img src="img/project/yf/yf3.jpg" width="60%">
-		<h1>Interviews</h1>
-		<p></p>
-		<img src="img/project/yf/yf4.png" width="60%">
-		<p></p>
-		<img src="img/project/yf/yf5.png" width="60%">
-		<p></p>
-		<img src="img/project/yf/yf6.png" width="60%">
-		<h1>Comparative Analysis</h1>
-		<p></p>
-		<img src="img/project/yf/yf7.png" width="60%">
-		<img src="img/project/yf/yf8.png" width="60%">
+		<br>
 	</div>
+</div>
+
+
 
 	<footer>
 		<div class="socialmedia">
@@ -81,7 +147,6 @@
 		</div>
 
 		<div class="copyright">&copy Siyu Jia 2018</div>
-
 
 	</footer>
 

@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -11,9 +12,10 @@
     <!-- link style sheets -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   	<link rel="stylesheet" type="text/css" href="css/style.css" />
-  	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-  	<!-- <script src="js/snap.svg-min.js"></script> -->
-   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- link to jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script>
     $(document).ready(function(){
@@ -44,10 +46,10 @@
       <a href="index.html">
         <div class = "logo"><img id="logo-img" src="img/logo.png" alt="logo-icon"></div>
       </a>
-        <div id="logo-text">Porfolio</div>
+        <div id="logo-text">PORTFOLIO</div>
       </div>
     	  
-      <ul class="top-nav-item">
+      <ul>
         <li><a class="current-page" href="index.html">Home</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="visual.html">Visual</a></li>
@@ -59,32 +61,41 @@
     </header>
 
 
-    <div id="main-content" class="main-content main-content-home">
-      <h2>Hi, I'm Siyu</h2>
-      <p>a master's student at the University of Michigan's School of Information, specializing in Human-computer Interaction. HCI is a fusion of my intellectual interests: technology, design, and people.</p>
-      <br>
-      <br>
+    <div class="container main-content">
+      <div class="row">
+        <div class="col-sm-6" id="main-content">
+          <h2>Hi, I'm Siyu</h2>
+          <p>a master's student at the University of Michigan's School of Information, specializing in Human-computer Interaction. HCI is a fusion of my intellectual interests: technology, design, and people.</p>
+        </div>
+      </div>
     </div>
 
-    <div id="home-gallery" class="container">
+
+    <div id="home-gallery" class="container body-content">
       <div class="row">
-      <div class="col-sm-4" id="image-cell">
+      <div class="col-sm-4" id="image-cell"><a href="project.html">
         <img src="img/home1.png" alt="Home Image One" width="100%">
+        </a>
       </div>
-      <div class="col-sm-4" id="image-cell">
-        <img src="img/home2.png" alt="Home Image Two" width="100%">
-      </div>
-      <div class="col-sm-4" id="image-cell">
-        <img src="img/home3.png" alt="Home Image Three" width="100%">
-      </div>
-      <div class="col-sm-4" id="image-cell">
-        <img src="img/home4.png" alt="Home Image Four" width="100%">
-      </div>
-      <div class="col-sm-4" id="image-cell">
+    <div class="col-sm-4" id="image-cell"><a href="visual.html">
         <img src="img/home5.png" alt="Home Image Five" width="100%">
+         </a>
       </div>
-      <div class="col-sm-4" id="image-cell">
-        <img src="img/home6.png" alt="Home Image Five" width="100%">
+      <div class="col-sm-4" id="image-cell"><a href="project.html">
+        <img src="img/home3.png" alt="Home Image Three" width="100%">
+         </a>
+      </div>
+      <div class="col-sm-4" id="image-cell"><a href="project.html">
+        <img src="img/home4.png" alt="Home Image Four" width="100%">
+         </a>
+      </div>
+      <div class="col-sm-4" id="image-cell"><a href="visual.html">
+        <img src="img/home6.png" alt="Home Image Six" width="100%">
+         </a>
+      </div>
+      <div class="col-sm-4" id="image-cell"><a href="project.html">
+        <img src="img/home2.png" alt="Home Image Two" width="100%">
+         </a>
       </div>
       </div>
     </div>
@@ -100,7 +111,6 @@
           <li><a href="https://www.instagram.com/pansy3717/" target="_blank"><img class="socail-media-icon" src="img/social/instagram.png" alt="Instagram-icon"></a></li>
           <li><a href=" https://www.facebook.com/siyu.jia" target="_blank"><img class="socail-media-icon" src="img/social/facebook.png" alt="Facebook-icon"></a></li>
           <li><a href="https://github.com/pansyjia" target="_blank"><img class="socail-media-icon" src="img/social/github.png" alt="Instagram-icon"></a></li>
-
         </ul>
       </div>
       

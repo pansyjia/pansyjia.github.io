@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Poppins:300,400,700);
 
 /* general staff */
 * {
 	margin:0 auto;
 	padding: 0 auto;
 	background-color: #ffffff;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Poppins', Arial, sans-serif;
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -20,11 +20,12 @@ header, footer {
 
 header {
 	display: inline-block;
-	background-color: #ffffff;
 	border-color:#000000;
-	margin: 0 auto;
-	border:0 auto;
+	margin-top: 0 auto;
+/*	padding-bottom: 5em;*/
+/*	position: fixed;*/
 }
+/*appear always on the top?*/
 
 
 .logo-text-container{
@@ -34,22 +35,18 @@ header {
 
 .logo {
 	height: auto;
-	margin:0;
-	text-align: center;
-	padding: 0.25em 0.75em;
+	margin:0.25em 0.25em;
 	float: left;
 }
 
 
 #logo-text{
-	margin-top:0.7%;
-	margin-bottom: 0px;
-	margin-left: 1.6%;
+	margin-top: 0.8em;
+	margin-bottom: 0.25em;
 	display:inline-block;
 	color: #000000;
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
-
 
 #logo-img{
   height: 4em;
@@ -61,7 +58,7 @@ header {
 }
 
 
-.top-nav ul{
+.top-nav ul {
 	list-style-type: none;
 	padding: 0;
 	margin:0;
@@ -69,15 +66,22 @@ header {
 	float: right;
 }
 
-.top-nav-item sli a{
+
+.top-nav ul li a{
 	font-size: 1em;
-	color: #000000;
 	text-decoration: none;
-	padding: .5em 1em;
-	display: inline;
+	padding: 0.15em 0.5em;
+	display: block;
 	text-align: center;
+	margin-top: 1.4em;
 }
 
+.current-page {
+	background-color: #000000;
+	color: #ffffff;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+}
 
 
 
@@ -97,14 +101,31 @@ a:active {
  	text-decoration: none;
 }
 
-.current-page {
-	background-color: #000000;
+
+.main-content h2 p{
+	text-align: center;
+	/*background-image: url('homeback.jpg');*/
 	color: #ffffff;
-	padding: 0.1em;
+	margin: 30% 100em;
+	padding: 30% 30%;
 }
 
-#main-content{
-	
+.main-content h2 {
+	font-size: 28px;
+}
+
+.main-content p{
+	font-size: 17px;
+}
+
+
+.main-content{
+	background-image: url("homeback.jpg");
+	height:30%;
+	width: 100%;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-repeat: no-repeat;
 }
 
 
@@ -116,6 +137,7 @@ body {
 	font-weight: 400;
 }
 
+
 a {
 	color: black;
 	text-decoration: underline;
@@ -123,17 +145,12 @@ a {
 
 
 /*home page*/
-
 #image-cell {
 	margin-top: 3%;
 }
 
 
-
 /*footer align*/
-footer {
-/*	position:fixed;*/
-}
 
 .socialmedia {
 	display: flex;
@@ -143,7 +160,8 @@ footer {
 
 .socialmedia li{
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 0.8em;
+  padding:0.2em 0.5em;
 }
 
 .socail-media-icon{
@@ -161,3 +179,36 @@ footer {
 }
 
 
+/*project page*/
+#proj_intro {
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+.body-project h4 {
+	margin-top: 1em; 
+	color:#3a2770;
+}
+
+.main-content-proj {
+	margin: 1em 3em;
+	padding: 0.2em 3em;
+}
+
+p{
+	padding: 0.5em 0.2em;
+	color: #595959;
+}
+
+iframe {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}

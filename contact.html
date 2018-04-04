@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<title>Siyu Jia</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <title>Siyu Jia</title>
+    <!-- link style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   	<link rel="stylesheet" type="text/css" href="css/style.css" />
-  	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-		<!-- <script src="js/snap.svg-min.js"></script> -->
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- link to jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $(".logo-text-container").hover(
+        function()
+        {
+      $("#logo-text").animate({opacity:1}, 350);
+        },
+        function()
+        {
+      $("#logo-text").animate({opacity:0}, 500);
+        }
+      );
+    });
+    </script>
+
+ 	</head>
+
 
 	<body class="body body-home">
 
-	<header>
+    <header>
 
       <nav id="top-nav" class="top-nav">
 
@@ -24,15 +44,15 @@
       <a href="index.html">
         <div class = "logo"><img id="logo-img" src="img/logo.png" alt="logo-icon"></div>
       </a>
-        <div id="logo-text">Porfolio</div>
+        <div id="logo-text">PORTFOLIO</div>
       </div>
     	  
-      <ul class="top-nav-item">
-        <li><a class="current-page" href="index.html">Home</a></li>
+      <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="visual.html">Visual</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="current-page" href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
