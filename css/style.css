@@ -226,3 +226,25 @@ figure {
 	align-items: center;
 	padding-top: 2em;
 }
+
+
+/*about page*/
+.resume {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.resume a{
+	font-size: 90%;
+	padding: 1em; 
+	border: 1px solid black;
+	border-radius:5px;
+}
+
+#self_intro {
+	text-align: left;
+}
