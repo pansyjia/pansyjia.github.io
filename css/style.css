@@ -212,3 +212,17 @@ figure {
 	justify-content: center;
 	align-items: center; 
 }
+
+.intro p {
+	font-style: italic;
+}
+
+
+/*visual page*/
+.subtitle {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2em;
+}
