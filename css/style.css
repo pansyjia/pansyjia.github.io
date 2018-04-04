@@ -143,15 +143,23 @@ a {
 	text-decoration: underline;
 }
 
+.title h2, p, h4 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1.5em;
+}
+
 
 /*home page*/
-#image-cell {
-	margin-top: 3%;
+#home-gallery img {
+	margin-top: 8%;
+	width:100%;
 }
 
 
 /*footer align*/
-
 .socialmedia {
 	display: flex;
 	justify-content: center;
@@ -180,10 +188,16 @@ a {
 
 
 /*project page*/
-#proj_intro {
-	text-align: center;
-	padding-top: 3em;
-	padding-bottom: 1em;
+#proj-cover img{
+	width:100%;
+}
+
+#proj-content img{
+	width:80%;
+}
+
+#matrix img {
+	width:100%;
 }
 
 .body-project h4 {
@@ -225,7 +239,15 @@ figure {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 2em;
+	padding-top: 2.5em;
+}
+
+#info, #poster, #web, #other {
+	padding-top: 1.5em;
+}
+
+.visual img {
+	width:100%;
 }
 
 
@@ -246,8 +268,12 @@ figure {
 	border-radius:3px;
 }
 
-#self_intro {
+#self_intro p{
 	text-align: left;
+}
+
+#photo img {
+	width:100%;
 }
 
 
@@ -260,10 +286,13 @@ figure {
 	padding-bottom: 1em;
 }
 
-#contacts h5{
+h5{
 	color:#350f93;
 	font-size: 0.8em;
 	font-weight: bold;
+}
+
+#contacts h5 {
 	padding-top: 2em;
 }
 
