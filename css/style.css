@@ -200,12 +200,13 @@ a {
 	width:100%;
 }
 
-.body-project h4 {
+#proj-body h4 {
 	margin-top: 1em; 
+	margin-bottom: 1em;
 	color:#350f93;
 }
 
-.main-content-proj {
+.proj-main-content {
 	margin: 1em 3em;
 	padding: 0.2em 3em;
 }
@@ -216,10 +217,16 @@ p{
 	color: #595959;
 }
 
+#proj-content p{
+	text-align: left
+}
+
 iframe {
 	display: flex;
 	justify-content: center;
 	align-items: center; 
+	width:100%;
+	height: 400px;
 }
 
 figure {
@@ -230,6 +237,10 @@ figure {
 
 .intro p {
 	font-style: italic;
+}
+
+#main-content h4{
+	text-align: left;
 }
 
 
