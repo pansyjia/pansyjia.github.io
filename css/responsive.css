@@ -85,6 +85,11 @@
     width: 100%
   }
 
+  #googleMap {
+    width:auto;
+    height:100%;
+  }
+
 
 }
 

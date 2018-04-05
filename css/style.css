@@ -280,10 +280,12 @@ figure {
 /*contact page*/
 #contacts h4{
 	padding-bottom: 0.5em;
+	text-align: left;
 }
 
 #form h4{
 	padding-bottom: 1em;
+	text-align: left;
 }
 
 h5{
