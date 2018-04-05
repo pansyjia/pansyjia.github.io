@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Poppins:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
 
 /* general staff */
 * {
@@ -22,7 +22,10 @@ header {
 	border-color:#000000;
 	margin-top: 0 auto;
 /*	padding-bottom: 5em;*/
-/*	position: fixed;*/
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+	top: 0;
 }
 /*appear always on the top?*/
 
@@ -134,6 +137,7 @@ body {
 	background-color: #ffffff;
 	color: black;
 	font-weight: 400;
+	padding-top: 74px;
 }
 
 
