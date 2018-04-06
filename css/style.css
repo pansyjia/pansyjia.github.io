@@ -21,13 +21,12 @@ header {
 	display: inline-block;
 	border-color:#000000;
 	margin-top: 0 auto;
-/*	padding-bottom: 5em;*/
 	position: fixed;
 	background-color: white;
 	z-index: 1;
 	top: 0;
 }
-/*appear always on the top?*/
+/*appear always on the top*/
 
 
 .logo-text-container{
@@ -103,7 +102,6 @@ a:active {
  	text-decoration: none;
 }
 
-
 .main-content h2 p{
 	text-align: center;
 	color: #ffffff;
@@ -118,7 +116,6 @@ a:active {
 .main-content p{
 	font-size: 17px;
 }
-
 
 .main-content{
 	background-size: cover;
@@ -312,7 +309,6 @@ h5{
 	padding-top: 2em;
 }
 
-
 #form legend{
 	color:#350f93;
 	font-size: 0.8em;
@@ -320,11 +316,9 @@ h5{
 	padding-top: 0.5em;
 }
 
-
 #form label{
 	padding-top: 0em;
 }
-
 
 #button{
 	background-color: grey;

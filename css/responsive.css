@@ -1,5 +1,4 @@
 @media only screen and (max-width: 480px) {
-
   /* navigation adjustment*/
   .top-nav ul {
     padding-left: 2%;
@@ -18,12 +17,12 @@
     align-items: center;
     width: 100%
   }
-  
+
   /*  video*/
   iframe {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width:100%;
   height: 200px;
   }
@@ -39,7 +38,6 @@
     width: 100%
   }
 
-
   .main-content-proj {
   margin: 0.2em 0.2em;
   padding: 0.2em 0.2em;
@@ -49,14 +47,12 @@
     width:100%;
   }
 
-
 }
 
 
 
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-
   /* navigation adjustment*/
   .top-nav ul li {
     display: inline-block;
@@ -96,11 +92,10 @@
   iframe {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width:100%;
   height: 315px;
   }
-
 
 }
 
@@ -108,9 +103,7 @@
 
 
 @media only screen and (min-width: 768px) {
-
-/* navigation adjustment*/
-
+  /* navigation adjustment*/
  .top-nav ul li {
     display: inline-block;
     width: 30%;
@@ -125,11 +118,9 @@
   iframe {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width:100%;
   height: 400px;
   }
-
-
 
 }
