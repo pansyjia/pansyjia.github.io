@@ -349,3 +349,8 @@ h5{
 	padding-right: 2em;
 	background-repeat: no-repeat;
 }
+
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
