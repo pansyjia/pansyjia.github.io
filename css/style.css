@@ -2,8 +2,8 @@
 
 /* general staff */
 * {
-	margin:0 auto;
-	padding: 0 auto;
+	margin:0;
+	padding: 0;
 	font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ header, footer {
 header {
 	display: inline-block;
 	border-color:#000000;
-	margin-top: 0 auto;
+	margin-top: 0;
 	position: fixed;
 	background-color: white;
 	z-index: 1;
