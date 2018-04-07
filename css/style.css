@@ -2,8 +2,8 @@
 
 /* general staff */
 * {
-	margin:0;
-	padding: 0;
+	margin:0 auto;
+	padding: 0 auto;
 	font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -102,11 +102,9 @@ a:active {
  	text-decoration: none;
 }
 
-.main-content h1 p{
+.main-content h1 {
 	text-align: center;
 	color: #ffffff;
-	margin: 30% 100em;
-	padding: 30% 30%;
 }
 
 h1 {
@@ -116,6 +114,7 @@ h1 {
 
 .main-content p{
 	font-size: 17px;
+	color: #ffffff;
 }
 
 .main-content{
@@ -327,4 +326,26 @@ h5{
 	font-size: 0.8em;
 	border:1px solid grey;
 	padding:0.4em 0.6em;
+}
+
+#contacts {
+	background-size: cover;
+	background-image: url('../img/formback.png');
+	width: 100%;
+	padding-top: 0.4em;
+	padding-bottom: 1.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background-repeat: no-repeat;
+}
+
+#form{
+	background-size: cover;
+	background-image: url('../img/formback.png');
+	width: 100%;
+	padding-top: 0.4em;
+	padding-bottom: 1.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background-repeat: no-repeat;
 }
