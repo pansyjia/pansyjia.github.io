@@ -109,8 +109,9 @@ a:active {
 	padding: 30% 30%;
 }
 
-.main-content h1 {
+h1 {
 	font-size: 28px;
+	text-align: center;
 }
 
 .main-content p{
