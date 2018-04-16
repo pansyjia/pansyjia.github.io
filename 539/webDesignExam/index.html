@@ -17,19 +17,20 @@
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
      <script>
+      $(document).ready(function(){
+          $('#button1').click(function(){
+               $('#img1').hide();
+               $('#img2').center();
+          });
 
-     $('#button1').click(function() {
-       $('#img1').hide();
-       });
-
-
-     // $('#button2').on('click', (){
-     //   $('#img1').show();
-     //     });
-
+          $('#button2').click(function(){
+             $('#img1').show();
+         });
+     });
      </script>
 
   </head>
+
 
   <body>
     <header>
