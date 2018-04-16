@@ -16,26 +16,41 @@
      <!-- link to jquery -->
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
+     <script>
+
+     $('#button1').click(function() {
+       $('#img1').hide();
+       });
+
+
+     // $('#button2').on('click', (){
+     //   $('#img1').show();
+     //     });
+
+     </script>
+
   </head>
+
+  <body>
     <header>
       <h1>Siyu Jia</h1>
     </header>
 
     <div class="container">
     <div id="pics" class="row">
-
-      <div class="col-sm-6">
+      <div id="img1" class="col-sm-6 order-first">
 		  <img src="images/examPic.JPG" alt="exampic">
       </div>
-      <div class="col-sm-6">
+      <div id="img2" class="col-sm-6 order-last">
 		  <img src="images/UMSI-logo.jpg" alt="umsi_logo">
       </div>
-
     </div>
     </div>
 
+    <br>
+    <input id="button1" type="button" value = "Hide Image">
+    <input id="button2" type="button" value = "Show Image">
 
-  <body>
 
   </body>
 </html>

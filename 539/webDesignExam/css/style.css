@@ -1,0 +1,45 @@
+ * {
+  background-size: cover;
+  background-image: url("../images/tic-tac-toe.png");
+}
+
+
+#img1, #img2 {
+  border:5px solid blue;
+  width: 100%;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#button1, #button2 {
+  background-color:lightgrey;
+  text-align: center
+}
+
+
+
+/* resonsive design */
+@media only screen and (max-width: 480px) {
+  #pics {
+    display: inline-block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #pics {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* #img1, #img2 {
+    grid-column: span 1;
+    padding: 0px;
+  } */
+
+
+}
