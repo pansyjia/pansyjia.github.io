@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SI 649 Group Project: TED talks</title>
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/normalize_ted.css" />
+    <link rel="stylesheet" href="css/style_ted.css" />
+</head>
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-path.v1.min.js"></script>
+    <script src="https://d3js.org/d3-shape.v1.min.js"></script>
+    <script type="text/javascript" src="js/draw_ted.js"></script>
+
+    <div class="row">
+        <div class="twelve columns" style="background-color: black; color: white; text-align: center; padding-top: 50px; padding-bottom: 60px;">
+        <h1><img src="img/logo_ted.png" class= "logo" alt="TED_logo" height="30"></h1>
+        <h1>What are the secrets behind TED Talk storytelling styles?</h1>
+        <h2>A closer look at Ted Talk ratings</h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+    <div class="row" id="introduction">
+         <div class="ten columns offset-by-one alpha">
+            <h3>Introduction</h3>
+             <p> TED talks are short, powerful talks (18 minutes or less) from expert speakers around the world. Under the slogan "Idea worth spreading", TED talks cover nearly all topics you can think of: education, business, science, tech, creativity, global issues, and many more. Nowadays TED Talks have successfully spread thousands of ideas to billions of people around the globe.</p>
+
+             <p>TED Website uses post-video questions to collect audience's reaction towards a talk. At the end of each TED Talk video, a user will be prompted to select one option from 14 categories under the question "How would you describe this talk"? These 14 categories are: Beautiful, Courageous, Fascinating, Funny, Informative, Ingenious, Inspiring, Persuasive, Confusing, Longwinded, Obnoxious, Unconvincing, OK, Jaw-dropping. Over time, the number of "votes" for each category are aggregated as ratings. These ratings can reflect <strong>the storytelling style </strong> of a TED Talks. </p>
+
+             <p>Our team got a dataset which contains detailed information about 2550 TED Talks, which includes number of views, number of comments, description, tags, and also rating for each of the 14 categories. We looked into this dataset with a specific interest in the 14 ratings and we expect to answer the following questions:</p>
+
+             <ul id="bulletpoints">
+               <li>Which storytelling style can best characterize TED Talk?</li>
+               <li>What is the specificity of storytelling styles regarding different topics?</li>
+               <li>What storytelling styles are related to more views?</li>
+               <li>What are the correlations/relations between different storytelling styles?</li>
+               <li>Between two storytelling styles, which one is more related to high view talks?</li>
+             </ul>
+
+
+
+             <div class="row">
+                <div class="video-container">
+                            <iframe src="https://embed.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email" width="640" height="360"> </iframe>
+
+                     <img src="img/example.png" class= "example" alt="rate-example" height="280px" display="inline-blcok">
+            </div>
+        </div>
+        <caption font-style="italic">The most-watched TED talk after normalizing views by the time the talks have been published on ted.com </caption>
+    </div>
+
+    <div class="row">
+        <div class="ten columns offset-by-one alpha">
+            <h3>I. TED Talks are inspiring and Informative in general</h3>
+            <p>As mentioned above, TED Talks covers a variety of topics and are given by people around the world. However, is there anything common in their style and spirit? We ask ourselves the question: Among the 14 categories, which of them can best characterize TED Talk in general?</p>
+
+            <p>We looked at this question in two different approaches. First, we summed up ratings for each category and created a bar chart (Figure 2). We can see that "Inspiring", "Informative", and "Fascinating" are the top 3 categories that are rated high. </p>
+
+            <p>Then, to answer questions like "How many TED talks are mainly Inspiring?", we aggregated the number of talks with each category as the "main rating" and created a bubble chart (Figure 3). The three biggest circles are "Inspiring", "Informative", and "Fascinating", which means these are the top categories that TED Talks mainly rated as. </p>
+
+            <p>From the two charts, we can say in general, TED Talks are inspiring, informative and fascinating. </p>
+        </div>
+     <!-- <div class="seven columns offset-by-two question">
+    </div> -->
+
+    <div class="ten columns offset-by-one alpha">
+            <div class="one-half column">
+                    <img src="img/bar1.png" class= "bar-one" alt="bar-sum" height="400px">
+            </div>
+            <div class="one-half column">
+                    <img src="img/bar2.png" class= "bar-two" alt="bar-main" height="400px">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div>
+            <div class="ten columns offset-by-one alpha">
+                <h3>II. TED Talk Storytelling style and topics</h3>
+                <p>In general, TED Talks are inspiring and informative. But is it true for talks under all topics? To answer this question, we constructed this interactive small multiple charts where users can select a topic and look at 6 top talks under that topic. For each talk, the bar chart shows the rating from highest to lowest. Looking at the top rating categories for each talk, we had some interesting discoveries.</p>
+
+                <p>While "Inspiring", "Informative" and "Fascinating" are common in all topics, we did find some patterns of rating categories related to topics.</p>
+
+
+
+                <p>First, for the top talks related to new Tech, they are often rated high on "Informative". <br><strong>TRY - "3d printing", "robot"</strong></p>
+
+                <p>Second, for top talks related to social issues, they are often rated high on Persuasive and Courageous.<br><strong>TRY - "aids", "gender","inequality"</strong></p>
+
+
+                <p>Third, when it comes to talks related to art and music, they are often rated high on Beautiful. <br><strong>TRY - "live music","art"</strong></p>
+
+
+                <p>We also found that for some serious topics that might not be eye-catching, for instance, alternative technology, the top talks are high on "Funny", "Jaw-dropping" and "Ingenious". <br><strong>TRY - "alternative technology","biology"</strong></p>
+
+
+            </div>
+            <div class="twelve columns offset-by-one">
+                    <br>
+                    <br>
+                    <div id="container1"></div>
+                    <div class="outside">
+                    <div id="list">
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+
+    <div class="row">
+            <div class="ten columns offset-by-one alpha">
+                <h3>III. Correlation between different storytelling styles & correlation between storytelling style and view</h3>
+                <p> The correlation heatmap here shows the relationship between different ratings and also the number of views. If the correlation between two ratings is high (encoded by ), it indicates that talks which get a higher rating on one is also likely to get high rating on the other, and vice versa; If the correlation between one rating and the view is high, it indicates that the video who gets high rating on one category is likely to get higher views, and vice versa. We observed the correlation heatmap and had some insights. </p>
+
+                <p> Fascinating, Informative, and Inspiring have high correlations with the number of views: talks that are fascinating/informative and inspiring are more likely to have higher views. </p>
+
+                <p>On the contrary, ratings Obnoxious and Unconvincing have relatively lower correlations with the number of views. This may reflect the fact that talks getting more these two ratings are less likely to get a high view number. </p>
+
+                <p>More interesting facts can be found in this heat map. For example, the correlation between Informative and Persuasive is quite high! A talk that is informative is also likely to be persuasive. Also for Jaw-dropping and Long winded, this combination has a really low correlation, from which we can infer that jaw-dropping TED talks tend to be short and long TED talks are less likely to have a jaw-dropping effect.</p>
+
+
+            </div>
+            <div class="six columns offset-by-four">
+                    <img src="img/cor.png" class= "heatmap" alt="heatmap" height="500px">
+            </div>
+
+    </div>
+
+
+
+    <div class="scatter">
+
+       <div class="ten columns offset-by-one alpha">
+       <h3>IV. Comparing two storytelling styles: which one is more related to talks with higher views?</h3>
+
+
+       <p> Now that we have a general idea of TED storytelling styles, let's have a closer look by comparing two of them at a time. Given two storytelling style (rating category), which one is associated with more views?</p>
+
+       <p>We constructed some bivariate scatterplot. The two axis each represents a rating category, and the color of the dot represents the number of views (blue being low and red being high). The scatterplot tells not only the distribution of the talks between two rating categories but also help us compare the relationship between the two rating categories and views.</p>
+
+       </div>
+
+        <div class="row" style="margin-top:20px;">
+        <div class="ten columns offset-by-one alpha">
+            <div class="one-half column">
+                <h5>"Funny" vs "Inspiring": Funny might be a new opportunity</h5>
+                <p>We can see a lot of talks are rated high on "Inspiring" compared to "Funny". Most talks are relatively low on "Funny". However, two of the most viewed videos (red dot) are high on "Funny".</p>
+            </div>
+            <div class="one-half column">
+                <h5>"Beautiful" vs "Informative": Informative wins!</h5>
+                <p>From the distribution, a lot more TED talks are rated high on "Informative". The red dots appear around the higher part of "Informative" but not on "Beautiful". Compared to "Beautiful", "Informative" talks are more in quantity and have higher views. </p>
+            </div>
+         </div>
+
+         <div class="ten columns offset-by-one alpha">
+                <!-- <div class="one-half column question" id="divScatter1">
+                    <svg width="95%" height="95%" id="scatterTransition1">
+                    </svg>
+                </div>
+                <div class="one-half column question" id="divScatter2">
+                    <svg width="95%" height="95%" id="scatterTransition2">
+                    </svg>
+                </div>
+                 -->
+
+            <div class="one-half column">
+                    <img src="img/scatter1.png" class= "bar-one" alt="bar-sum" height="360px">
+            </div>
+            <div class="one-half column">
+                    <img src="img/scatter2.png" class= "bar-two" alt="bar-main" height="360px">
+            </div>
+            <img src="img/slegend.png" class= "s-legend" alt="scatter-legend" height="60px">
+            </div>
+        </div>
+
+        <div class="scatter">
+
+           <div class="ten columns offset-by-one alpha">
+
+       <h3>V. Compare two styles of your choice!</h3>
+        <div class="row">
+            <br>
+
+            <div>
+                <p>Good news! With the help of the interactive bivariate scatterplot, you can compare any two storytelling styles of your choice and come up with your own insights.</p>
+                <p>Compare
+                  <select class="dropdown" id="xaxis">
+              <option value="Beautiful">Beautiful</option>
+              <option value="Confusing">Confusing</option>
+              <option value="Courageous">Courageous</option>
+              <option value="Fascinating">Fascinating</option>
+              <option value="Funny">Funny</option>
+              <option value="Informative" selected>Informative</option>
+              <option value="Ingenious">Ingenious</option>
+              <option value="Inspiring">Inspiring</option>
+              <option value="Jaw.dropping">Jaw-dropping</option>
+              <option value="Longwinded">Longwinded</option>
+              <option value="OK">OK</option>
+              <option value="Obnoxious">Obnoxious</option>
+              <option value="Persuasive">Persuasive</option>
+              <option value="Unconvincing">Unconvincing</option>
+          </select> and
+          <select class="dropdown" id="yaxis">
+            <option value="Beautiful">Beautiful</option>
+            <option value="Confusing">Confusing</option>
+            <option value="Courageous">Courageous</option>
+            <option value="Fascinating">Fascinating</option>
+            <option value="Funny" selected>Funny</option>
+            <option value="Informative">Informative</option>
+            <option value="Ingenious">Ingenious</option>
+            <option value="Inspiring">Inspiring</option>
+            <option value="Jaw.dropping">Jaw-dropping</option>
+            <option value="Longwinded">Longwinded</option>
+            <option value="OK">OK</option>
+            <option value="Obnoxious">Obnoxious</option>
+            <option value="Persuasive">Persuasive</option>
+            <option value="Unconvincing">Unconvincing</option>
+    </select>  </p>
+            </div>
+            <!-- <div id="divScatter3"> -->
+                <svg width="60%" height="450px" class="question" id="scatterTransition3"></svg>
+            <!-- </div> -->
+        </div>
+    </div>
+  </div>
+
+
+
+    <div class="row">
+            <div class="ten columns offset-by-one alpha">
+                <h3>Conclusion</h3>
+                <p> TED talks spread ideas in an inspiring, informative and fascinating way. For different topics, TED talks have different characteristics for storytelling styles. Some characteristics are more likely to appear together (for instance, Fantastic and inspiring), while some characteristics are not so likely to be rated high for the same talk (for instance, longwinded and jaw-dropping). When we look at the talks in terms of two styles together, we see interesting patterns of distribution of the number of talks and also the number of views for each talk. For instance, there are not a lot of funny talks, but those which are funny get a high number of views. </p>
+                <br>
+                <br>
+                <br>
+            </div>
+
+    </div>
+
+
+</div>
+</body>
+
+
+<footer class="twelve columns"  style="background-color: black; color:#fafafa; text-align: center; font-size: 14px; ">
+   <a href="https://github.com/pansyjia/TED-ratings" class="githubRepo"  style="color: #fafafa; font-size: 14px; ">Github Repository of this Project</a>
+    <br>
+    <div class="copyright" style="color: #fafafa; font-size: 14px; "> &copy 2018 All Rights Reserved </div>
+</footer>
+</html>
