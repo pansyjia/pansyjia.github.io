@@ -20,21 +20,21 @@ img.logo{
 h1{
     color:#ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
 }
 
 h2{
     color:#ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 250;
 }
 
 h3{
     color:#e62b1e;
     font-family: Helvetica, Arial, sans-serif;
-    font-size:24px;
+    font-size:20px;
     padding-top: 3em;
     font-weight: 300;
 }
@@ -48,7 +48,7 @@ h5 {
 }
 
 .info-label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: Consolas;
 }
@@ -63,12 +63,12 @@ h6 {
 
 p{
     color:#404040;
-    font-size:16px;
+    font-size:15px;
 }
 
 
 legend {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -192,7 +192,7 @@ text {
 
 .one-talk {
     display: inline-block;
-    width: 30%;
+    width: 28%;
 }
 
 .select{
@@ -200,11 +200,11 @@ text {
 }
 
 footer {
-    padding: 20px;
+    padding: 18px;
 }
 
 #bulletpoints {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 caption{
