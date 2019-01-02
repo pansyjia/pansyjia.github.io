@@ -63,14 +63,6 @@ label input {
 }
 
 
-/* .chartholder{
-    width: 30%;
-    margin-right:3%;
-    float:left;
-    text-align:center;
-    padding-bottom:40px;
-} */
-
 
 .text {
     font-size: 14px;
@@ -106,8 +98,8 @@ fieldset {
     position: relative;
     width: 450px;
     min-height: 450px;
-    background-color: #ffffff;
-    margin: 20px 100px;
+    /* background-color: #ffffff; */
+    /* margin: 20px 100px; */
 }
 
 .target {
@@ -143,15 +135,15 @@ button:hover  {
 }
 
 #divScatter1 {
-  height: 450px;
+  height: 400px;
 }
 
 #divScatter2 {
-    height: 450px;
+    height: 400px;
   }
 
 #divScatter3 {
-    height: 500px;
+    height: 450px;
 }
 
 text {
